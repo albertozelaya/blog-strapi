@@ -1,4 +1,4 @@
 import Blogs from "./Blogs";
 import Navbar from "./Navbar";
-
-export { Navbar, Blogs };
+import Footer from "./Footer";
+export { Navbar, Blogs, Footer };
