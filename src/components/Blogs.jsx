@@ -1,4 +1,3 @@
-import React from "react";
 
 const Blogs = () => {
   const blogs = [
@@ -22,7 +21,7 @@ const Blogs = () => {
     },
   ];
   return (
-    <div className="w-full bg-BG_LIGHT py-[50px]">
+    <div className="w-full py-32">
       <div className="max-w-[1240px] mx-auto">
         <div className="grid lg:grid-cols-3 gap-8 px-4 text-black">
 
@@ -63,5 +62,6 @@ const Blogs = () => {
     </div>
   );
 };
+
 
 export default Blogs;

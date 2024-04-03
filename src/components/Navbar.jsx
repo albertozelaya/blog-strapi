@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { logo, menu, close, logotipo } from "../assets";
+import { menu, close, logotipo } from "../assets";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   //usestate es el primer valor, setToggle es para establecer valor de toggle()
   const handleClick = () => setToggle(!toggle);
   return (
-    <div className="w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg md:relative">
+    <div className="w-full h-[80px] z-10 bg-white fixed drop-shadow-lg">
       <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
         <div className="flex items-center">
           <img src={logotipo} alt="logotipo" className="ml-4 sm:ml-10 ss:ml-10 md:ml-3 w-full h-[30px]" />
