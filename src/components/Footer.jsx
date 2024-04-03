@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaTwitch, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaTwitch, FaGithub } from "react-icons/fa"
 const Footer = () => {
   return (
     <div className="w-full bg-RED_DARKER text-gray-200 py-8 px-2">
