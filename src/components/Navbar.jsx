@@ -24,7 +24,7 @@ const Navbar = () => {
           <button className="px-8 py-3">Sign Up</button>
         </div>
         <div className="md:hidden" onClick={handleClick}>
-          <img src={toggle ? menu : close} alt="menu" className="w-[28px] h-[28px] object-contain mr-10" />
+          <img src={toggle ? menu : close} alt="menu" className="w-[28px] h-[28px] object-contain mr-10 cursor-pointer" />
         </div>
       </div>
       <ul className={!toggle ? "absolute bg-white w-full px-8 md:hidden" : "hidden"}>
