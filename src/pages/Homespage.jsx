@@ -1,6 +1,5 @@
 import { Blogs, Footer, Navbar } from "../components";
 
-
 const Homespage = () => {
   return (
     <div>
