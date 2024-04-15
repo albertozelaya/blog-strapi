@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Blogs = ({blogs}) => {
   return (
-    <div className="w-full py-32">
+    <div className="w-full pt-24 mb-4">
       <div className="max-w-[1240px] mx-auto">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 ss:grid-cols-1 gap-8 px-4 text-black">
           {blogs.data.map((blog) => (

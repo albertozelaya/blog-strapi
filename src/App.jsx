@@ -4,7 +4,7 @@ import useFetch from "./hooks/useFetch";
 import Homepage from "./pages/Homepage";
 
 export default function App() {
-  let { loading, data, error } = useFetch("http://localhost:1338/api/blogs?populate=*");
+  let { loading, data, error } = useFetch(import.meta.env.VITE_BACKEND_URL);
   if(loading) return <p>Cargando...</p>
   if(error) return <p>Error</p>
 
