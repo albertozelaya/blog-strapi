@@ -11,9 +11,10 @@ To install this project you will need the following commands:
 - npm install dompurify
 - npm install react-router-dom --- for using routes
 
+## For backup the data
+
 > Inside Strapi folder (=> my-project)
 
-## For backup the data
 
 - npm install
 - npm run strapi export -- --file data/data-backup || npm run strapi import -- -f data\data-backup.tar.gz.enc
