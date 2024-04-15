@@ -13,7 +13,7 @@ To install this project you will need the following commands:
 
 > Inside Strapi folder (=> my-project)
 
-- [x] for backup the data
+## for backup the data
 
 - npm install
 - npm run strapi export -- --file data/data-backup || npm run strapi import -- -f data\data-backup.tar.gz.enc
