@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import DOMPurify from "dompurify";
 import rehypeRaw from "rehype-raw";
 const BlogContent = ({blogs}) => {
+  const cleanContent = DOMPurify.sanitize(blogs);
   const { id } = useParams();
 
   let blog = {};
@@ -11,40 +13,7 @@ const BlogContent = ({blogs}) => {
   } else {
     blog={}
   }
-  // const blogs = [
-  //   {
-  //     id: 1,
-  //     title: "Blog 1",
-  //     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus consequatur nihil fugiat perspiciatis perferendis, consequuntur magnam accusantium eum esse reprehenderit illo quae odio voluptate omnis delectus iusto libero repudiandae tempora voluptates eligendi maxime! Doloribus neque quam, provident harum saepe perspiciatis aspernatur illo asperiores voluptatem vel blanditiis quos laboriosam commodi nesciunt eaque. Illum dolores suscipit laborum sint incidunt voluptas beatae vitae quae laudantium esse maxime ut expedita assumenda, nihil accusantium explicabo deleniti perferendis possimus quasi harum vero officia sed. Eum dolores laudantium sunt aliquid illo commodi quae aut debitis reiciendis fuga veritatis velit magni adipisci, quis neque sint omnis rerum dolorem animi labore earum. Placeat tempora praesentium similique, quaerat consequatur aperiam eius nemo commodi laborum! Nemo error saepe inventore voluptatem?",
-  //     cover: "https://www.banhcafe.hn/_next/image?url=%2Fannouncement-2.webp&w=640&q=75",
-  //     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dignissimos iure inventore.",
-  //     authorName: "John Does",
-  //     authorImg: "https://img.freepik.com/free-photo/smiling-redhead-man-with-laptop-looking-camera-cafe_1163-5162.jpg",
-  //     authorDesc: "Web Developer",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Blog 2",
-  //     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae",
-  //     cover: "https://www.banhcafe.hn/_next/image?url=%2Fannouncement-2.webp&w=640&q=75",
-  //     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dignissimos iure inventore.",
-  //     authorName: "John Doe",
-  //     authorImg: "https://img.freepik.com/free-photo/smiling-redhead-man-with-laptop-looking-camera-cafe_1163-5162.jpg",
-  //     authorDesc: "Web Developer",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Blog 3",
-  //     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae",
-  //     cover: "https://www.banhcafe.hn/_next/image?url=%2Fannouncement-2.webp&w=640&q=75",
-  //     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dignissimos iure inventore.",
-  //     authorName: "John Doe",
-  //     authorImg: "https://img.freepik.com/free-photo/smiling-redhead-man-with-laptop-looking-camera-cafe_1163-5162.jpg",
-  //     authorDesc: "Web Developer",
-  //   },
-  // ];
-  // let blog = blogs.filter(blog => blog.id== id)
-  // blog = blog[0]
+
   return (
     <div className="w-full pb-10 pt-24 ss:pt-4 md:pt-3 lg:pt-3 bg-[#f9f9f9]">
       <div className="max-w-[1240px] mx-auto">
