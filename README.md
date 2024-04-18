@@ -10,6 +10,7 @@ To install this project you will need the following commands:
 - npm - - install react-markdown rehype-raw
 - npm install dompurify
 - npm install react-router-dom --- for using routes
+- npm install prop-types
 
 ## For backup the data
 
