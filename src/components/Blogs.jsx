@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Blogs = ({ blogs }) => {
+console.log("🚀 ~ Blogs ~ blogs:", blogs)
 
   const blogItems = blogs.data.map((blog) => (
     <Link to={`/blog/${blog.id.toString()}`} key={blog.id}>
