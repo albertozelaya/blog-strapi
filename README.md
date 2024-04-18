@@ -2,7 +2,8 @@
 
 To install this project you will need the following commands:
 
-npm install, npm i react-icons, npm i react-markdown, npm install react-markdown rehype-raw, npm install dompurify, npm install -g nextui-cli, npm install @nextui-org/react @nextui-org/styles
+npm install, npm i react-icons, npm i react-markdown, npm install react-markdown rehype-raw, npm install dompurify, npm install -g nextui-cli, npm install @nextui-org/react
+
 
 --- in the general folder
 
