@@ -5,12 +5,12 @@ To install this project you will need the following commands:
 > In the general folder
 
 - npm install
+- npm install @nextui-org/react
 - npm i react-icons
 - npm i react-markdown
 - npm install react-markdown rehype-raw
 - npm install dompurify
 - npm install -g nextui-cli
-- npm install @nextui-org/react
 
 > Inside Strapi folder
 
