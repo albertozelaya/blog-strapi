@@ -4,11 +4,11 @@ const Homepage = ({blogs}) => {
   
 
   return (
-    <>
+    <div>
       <Navbar />
       <Blogs blogs={blogs} />
       <Footer />
-    </>
+    </div>
   );
 };
 

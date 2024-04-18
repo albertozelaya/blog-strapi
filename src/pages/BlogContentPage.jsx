@@ -1,19 +1,14 @@
 import { BlogContent, Footer, Navbar, } from "../components";
-import PropTypes from "prop-types";
 
 const BlogContentPage = ({blogs}) => {
   // console.log(blogs)
   return (
-    <>
+    <div>
       <Navbar />
-      <BlogContent blogs={blogs} />
+      <BlogContent blogs={blogs}/>
       <Footer />
-    </>
+    </div>
   );
-};
-
-BlogContent.propTypes = {
-  blogs: PropTypes.object,
 };
 
 export default BlogContentPage;

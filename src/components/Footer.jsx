@@ -1,8 +1,8 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaTwitch, FaGithub } from "react-icons/fa"
 const Footer = () => {
   return (
-    <div className="w-full bg-RED_DARKER text-gray-200 py-5 px-2">
-      <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-2 ">
+    <div className="w-full bg-RED_DARKER text-gray-200 py-8 px-2">
+      <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 mt-20">
         <div>
           <h6 className="font-bold uppercase py-2">Solutions</h6>
           <ol>
@@ -49,7 +49,7 @@ const Footer = () => {
           <p className="py-4">The latest news, articles, and resources sent to your inbox weekly.</p>
           <form className="flex flex-col sm:flex-row">
             <input className="w-full p-2 mr-4 rounded-md mb-2" type="email" placeholder="Enter email" />
-            <button className="p-2 mb-2 bg-[#00B86E] rounded-lg">Subscribe</button>
+            <button className="p-2 mb-2 bg-[#00B86E] ">Subscribe</button>
           </form>
         </div>
       </div>
